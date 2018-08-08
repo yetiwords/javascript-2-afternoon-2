@@ -7,34 +7,33 @@
 */
 
 ////////// PROBLEM 1 //////////
-
 // Do not edit the code below.
 var arr = [10,20,30];
 // Do not edit the code above.
-
 /*
   Create a function named 'first' that is given 'arr' as an argument.
   Return the first item in the given array.
 */
-
 //Code Here
 
-
+function first(arr) {
+  return arr.shift()
+}
 
 ////////// PROBLEM 2 //////////
 
 // Do not edit the code below.
 var arr = [40,50,60];
 // Do not edit the code above.
-
 /*
   Create a function named 'last' that is given 'arr' as an argument. 
   Return the last item in the given array.
 */
-
 //Code Here
 
-
+function last(arr) {
+  return arr.pop()
+}
 
 ////////// PROBLEM 3 //////////
 
@@ -46,10 +45,13 @@ var family = ['Tyler', 'Jordyn', 'Ryan', 'Chelsey', 'Ireland'];
   Create a function named 'looper' that is given family as it's only argument. 
   Loop through the given array and alert every item in the array.
 */
-
 //Code Here
 
-
+function looper(family) {
+  for (let i = 0 ; i < family.length ; i++) {
+    alert(family[i])
+  }
+}
 
 ////////// PROBLEM 4 //////////
 
@@ -61,10 +63,13 @@ var letters = ['A', 'B', 'C', 'D', 'E'];
   Write a function called reversedLooper that is given letters as it's only argument. 
   Loop through the given array backwards alerting every item in the array starting at the end.\
 */
-
 //Code Here
 
-
+function reversedLooper(letters) {
+  for (let i = letters.length -1; i >= 0; i-- ) {
+    alert(letters[i])
+  }
+}
 
 ////////// PROBLEM 5 //////////
 
@@ -76,23 +81,20 @@ var nums = [1,2,3,6,22,98,45,23,22,12];
   Write a function named evenFinder that is given nums as it's only argument.
   Return an array that contains the even numbers from the nums array.
 */
-
 //Code Here
 
 
-
-
-
-
+function evenFinder(nums) {
+  for (let i = letters.length -1; i >= 0; i-- ) {
+    if (nums[i] % 2 === 1){
+    nums.splice(i,1)
+    }
+  }
+  return nums
+}
 
 /////////////////////// EXTRA PRACTICE PROBLEMS BELOW ////////////////////
 ////////// MOVE ONTO NEXT SECTION BEFORE WORKING ON THESE ////////////////
-
-
-
-
-
-
 
 ////////// PROBLEM 6 //////////
 
@@ -106,6 +108,20 @@ var numbersArray = [1,2,34,54,55,34,32,11,19,17,54,66,13];
 */
 
 //Code Here
+
+function divider(numbersArray){
+ 
+  let evens = [];
+  let odds = [];
+  for(i = 0; i < numbersArray.length; i++) {
+    if(numbersArray[i] % 2 === 0){
+      evens.push(numbersArray[i]);
+    } else{
+      odds.push(numbersArray[i]);
+    }
+  }
+  return [evens, odds];
+ }
 
 
 
@@ -128,6 +144,9 @@ var getRandomArbitrary = function() {
 
 //Code Here
 
+function finder() {
+
+}
 
 
 ////////// PROBLEM 8 //////////
@@ -157,6 +176,15 @@ var myGroceryList = ['chips', 'pizza', 'hotpockets', 'MtnDew', 'corndogs'];
 
 //Code Here
 
+function removeItem(arr) {
+  var newArr = []
+  return newArr
+}
+
+function addItem(arr) {
+  var newArr = []
+  return newArr
+}
 
 
 ////////// PROBLEM 9 //////////
@@ -166,8 +194,16 @@ var myGroceryList = ['chips', 'pizza', 'hotpockets', 'MtnDew', 'corndogs'];
 */
 
 //Code Here
+function maker() {
+  let made = []
 
+  for( var i = 1 ; i <= 215 ; i++ ) {
+    made.push(i);
+    console.log(made)
+  }
 
+  return made
+}
 
 ////////// PROBLEM 10 //////////
 
